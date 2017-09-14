@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="I_Am_Rich" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diamond" translatesAutoresizingMaskIntoConstraints="NO" id="bHq-Bs-4fV">
+                                <rect key="frame" x="52" y="198" width="270" height="270"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="270" id="ENg-sA-aLv"/>
+                                    <constraint firstAttribute="width" constant="270" id="Hph-Rg-ZDY"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Am Rich" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZv-Ol-SgN">
+                                <rect key="frame" x="104.5" y="142" width="166" height="48"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20392156862745098" green="0.28627450980392155" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bHq-Bs-4fV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0oD-WN-Zxe"/>
+                            <constraint firstItem="bHq-Bs-4fV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="D5p-IV-j5u"/>
+                            <constraint firstItem="uZv-Ol-SgN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K1u-Ue-0hm"/>
+                            <constraint firstItem="bHq-Bs-4fV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VrO-1w-geW"/>
+                            <constraint firstItem="bHq-Bs-4fV" firstAttribute="top" secondItem="uZv-Ol-SgN" secondAttribute="bottom" constant="8" id="jRy-u9-HkD"/>
+                            <constraint firstItem="bHq-Bs-4fV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yyE-44-ggl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="diamond" width="515" height="377"/>
+    </resources>
+</document>
