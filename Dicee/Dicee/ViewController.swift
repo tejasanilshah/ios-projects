@@ -15,25 +15,24 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        updateDiceFaces()
     }
 
     @IBAction func rollButtonPressed() {
-        let randomNumber1 = arc4random_uniform(6) + 1
-        let randomNumber2 = arc4random_uniform(6) + 1
-        diceImage1.image = UIImage(named: "dice" + "\(randomNumber1)" )
-        diceImage2.image = UIImage(named: "dice" + "\(randomNumber2)" )
+        updateDiceFaces()
     }
     
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
-            rollButtonPressed()
+            updateDiceFaces()
         }
+    }
+    
+    func updateDiceFaces() -> Void {
+        let randomNumber1 = arc4random_uniform(6) + 1
+        let randomNumber2 = arc4random_uniform(6) + 1
+        diceImage1.image = UIImage(named: "dice" + "\(randomNumber1)" )
+        diceImage2.image = UIImage(named: "dice" + "\(randomNumber2)" )
     }
 
 }
