@@ -17,7 +17,10 @@ class ViewController: UIViewController{
     }
 
     @IBAction func notePressed(_ sender: UIButton) {
-        let url = Bundle.main.url(forResource: "note\(sender.tag)", withExtension: "wav")!
+        playSound(fileName: "note\(sender.tag)")
+    }
+    func playSound(fileName: String) -> Void {
+        let url = Bundle.main.url(forResource: fileName, withExtension: "wav")!
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: url)
             guard let audioPlayer = audioPlayer else { return }
@@ -27,9 +30,7 @@ class ViewController: UIViewController{
         } catch let error{
             print(error)
         }
-        
     }
-    
   
 
 }
