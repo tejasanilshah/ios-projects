@@ -39,3 +39,4 @@ class QuestionBank {
         list.append(Question(text: "Chocolate affects a dog\'s heart and nervous system; a few ounces are enough to kill a small dog.", correctAnswer: true))
     }
 }
+
