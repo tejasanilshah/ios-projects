@@ -10,7 +10,7 @@ Some of the projects are built along with a udemy course, the others are apps th
 
 An animated grid built using code only.
 
-![A gif of grid tiles being animated on touch](./Animated%20Grid/ag_demo.)
+![A gif of grid tiles being animated on touch](./Animated%20Grid/ag_demo.gif)
 
 ## Destini
 
